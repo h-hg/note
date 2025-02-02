@@ -1,11 +1,15 @@
 {
+  "type": "module",
   "devDependencies": {
+    "prettier": "^3.4.2",
     "vitepress": "^1.5.0",
     "vitepress-parse-bar": "^0.1.2"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:fmt": "prettier --write '**/*.md'",
+    "docs:link": "node --experimental-strip-types scripts/unlink.ts"
   }
 }

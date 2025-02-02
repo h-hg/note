@@ -1,20 +1,29 @@
 # 目录
 
-- <img src="https://en.cppreference.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> C++
-- <img src="https://www.qt.io/hubfs/QtGroup_Favicon_32.ico" style="display:inline-block; width:1rem; height: 1rem"/> [Qt](./qt/)
-- <img src="https://www.lua.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Lua
+- 语言
+  - <img src="https://en.cppreference.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> C++
+  - <img src="https://www.python.org/static/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> [Python](./python/)
+  - <img src="https://golang.google.cn/images/favicon-gopher.png" style="display:inline-block; width:1rem; height: 1rem"/> [Golang](./golang/)
+  - <img src="https://www.lua.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Lua
+  - <img src="https://www.gnu.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Bash Shell
+  - <img src="https://dart.cn/assets/img/logo/dart-64.png" style="display:inline-block; width:1rem; height: 1rem"/> Dart
+  - <img src="https://www.latex-project.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Latex
 - 前端
-  - [JavaScript](./javascript/)
+  - <img src="https://developer.mozilla.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> [JavaScript](./javascript/)
   - <img src="https://www.typescriptlang.org/favicon-32x32.png" style="display:inline-block; width:1rem; height: 1rem"/> [TypeScript](./typescript/)
   - <img src="https://cn.vuejs.org/logo.svg" style="display:inline-block; width:1rem; height: 1rem"/> [Vue](./vue/)
 - 客户端
-- <img src="https://golang.google.cn/images/favicon-gopher.png" style="display:inline-block; width:1rem; height: 1rem"/> [Golang](./golang/)
-- <img src="https://en.cppreference.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> [机器学习](./ml/)
+  - <img src="https://www.qt.io/hubfs/QtGroup_Favicon_32.ico" style="display:inline-block; width:1rem; height: 1rem"/> [Qt](./qt/)
+  - <img src="https://docs.flutter.cn/assets/images/cn/flutter-icon.png" style="display:inline-block; width:1rem; height: 1rem"/> Flutter
+- <img src="https://openai.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> [机器学习](./ml/)
 - OS
   - <img src="https://www.microsoft.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Windows
   - <img src="https://www.kernel.org/theme/images/logos/favicon.png" style="display:inline-block; width:1rem; height: 1rem"/> Linux
-- <img src="https://www.python.org/static/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> [Python](./python/)
 - 数据库
-  - Redis
-  - SQLite
-  - MySQL
+  - <img src="https://redis.io/wp-content/themes/wpx/assets/images/favicons/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Redis
+  - <img src="https://www.sqlite.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> SQLite
+  - <img src="https://labs.mysql.com/common/themes/sakila/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> MySQL
+- 工具类
+  - <img src="https://www.docker.com/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Docker
+  - <img src="https://nginx.org/favicon.ico" style="display:inline-block; width:1rem; height: 1rem"/> Nginx
+- 博文

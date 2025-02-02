@@ -17,11 +17,15 @@ export default defineConfig({
     '**/sidebar.md',
     '**/navbar.md'
   ],
+  lastUpdated: true,
   themeConfig: {
     nav: parseMd(path.join(workspace, 'navbar.md')),
     sidebar: scanMdFiles(workspace, '/', 'sidebar.md'),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/h-hg' }
     ],
+    search: {
+      provider: 'local'
+    },
   }
 })
