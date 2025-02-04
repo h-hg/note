@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.RXnjjeXB.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ml/index.md","filePath":"ml/index.md","lastUpdated":1738665368000}'),n={name:"ml/index.md"};function r(o,s,d,c,i,m){return a(),t("div")}const _=e(n,[["render",r]]);export{l as __pageData,_ as default};
