@@ -8,3 +8,5 @@
   - [样式](./component/style)
   - [通信](./component/communication)
   - [插槽](./component/slots)
+- 库
+  - [Pinia](./lib/pina)

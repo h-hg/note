@@ -36,7 +36,9 @@ async function scanLinkedFiles(
   const markdownFiles = await collectFiles(rootDir, pattern, exclusive);
   const nodePaths: string[] = [];
   for (const mdPath of markdownFiles) {
-    const content = await fs.readFile(mdPath, { encoding: "utf8" });
+    const content = await fs.readFile(path.posix.join(rootDir, mdPath), {
+      encoding: "utf8",
+    });
     const lines = content.split(/\r?\n/).filter((line) => line.trim() !== "");
 
     for (const line of lines) {
@@ -55,7 +57,7 @@ async function scanLinkedFiles(
       nodePaths.push(relPath);
     }
   }
-  return normalPaths(rootDir, nodePaths.sort());
+  return nodePaths.sort();
 }
 
 async function scanRealFiles(
@@ -64,23 +66,16 @@ async function scanRealFiles(
   exclusive: RegExp[] | RegExp,
 ): Promise<string[]> {
   const files = await collectFiles(rootDir, inclusive, exclusive);
-  return normalPaths(rootDir, files);
+  return files;
 }
 
-function normalPaths(rootDir: string, paths: string[]): string[] {
-  let normalizedRootDir = path.posix.resolve("/", rootDir.replace("\\", "/"));
-  if (!normalizedRootDir.endsWith("/")) {
-    normalizedRootDir += "/";
-  }
-  return paths.map((filePath) =>
-    path.posix.resolve("/", filePath).slice(normalizedRootDir.length),
-  );
-}
 async function collectFiles(
   rootDir: string,
   inclusive: RegExp[] | RegExp,
   exclusive: RegExp[] | RegExp,
 ): Promise<string[]> {
+  const curDir = process.cwd();
+  process.chdir(rootDir);
   if (!Array.isArray(inclusive)) {
     inclusive = [inclusive];
   }
@@ -88,8 +83,8 @@ async function collectFiles(
     exclusive = [exclusive];
   }
   const files: string[] = [];
-  const normalizedRootDir = rootDir.replace("\\", "/");
-  await collectFilesHelper(normalizedRootDir, inclusive, exclusive, files);
+  await collectFilesHelper(".", inclusive, exclusive, files);
+  process.chdir(curDir);
   return files.sort();
 }
 
@@ -140,6 +135,7 @@ function diff(realFiles: string[], linkedFiles: string[]) {
   const linkedExclusive: RegExp[] = [
     /[\\/]\.git[\\/]?/,
     /[\\/]\.vitepress[\\/]?/,
+    /^index\.md$/,
   ];
   const realExclusive = linkedExclusive
     .map((elem) => elem)

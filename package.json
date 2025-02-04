@@ -12,4 +12,4 @@
     "docs:fmt": "prettier --write '**/*.md'",
     "docs:link": "node --experimental-strip-types scripts/unlink.ts"
   }
-}
+} 
