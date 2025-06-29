@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "GitHub Light",
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorStyle": "line",
   "editor.detectIndentation": true,
@@ -115,5 +116,6 @@
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "on"
-  }
+  },
+  "MarkdownPaste.path": "${fileDirname}/img"
 }

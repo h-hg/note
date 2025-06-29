@@ -1,9 +1,20 @@
 {
   "type": "module",
   "devDependencies": {
-    "prettier": "^3.4.2",
-    "vitepress": "^1.5.0",
-    "vitepress-parse-bar": "^0.1.2"
+    "@mdit/plugin-figure": "^0.22.1",
+    "@mdit/plugin-footnote": "^0.22.2",
+    "@mdit/plugin-mark": "^0.22.1",
+    "@mdit/plugin-sub": "^0.22.1",
+    "@mdit/plugin-sup": "^0.22.1",
+    "@mdit/plugin-tasklist": "^0.22.1",
+    "@viz-js/viz": "^3.14.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "mermaid": "^11.7.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-lint-md": "^1.0.1",
+    "pseudocode": "^2.4.1",
+    "vitepress": "^1.6.3",
+    "vitepress-parse-bar": "^0.1.6"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -12,4 +23,4 @@
     "docs:fmt": "prettier --write '**/*.md'",
     "docs:link": "node --experimental-strip-types scripts/unlink.ts"
   }
-} 
+}
